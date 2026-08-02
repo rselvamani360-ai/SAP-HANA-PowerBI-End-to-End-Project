@@ -14,7 +14,7 @@ Shows the complete end-to-end project architecture from CSV dataset to Power BI 
 
 ## 🖥 SAP HANA Environment
 
-**File:** ![SAP HANA Environment](Images/Oracle%20Virtualbox.png)
+**File:** ![SAP HANA Environment](Oracle%20Virtualbox.png)
 
 Shows Oracle VirtualBox running Ubuntu Linux Server with SAP HANA Express Edition installed and operational.
 
@@ -22,7 +22,7 @@ Shows Oracle VirtualBox running Ubuntu Linux Server with SAP HANA Express Editio
 
 ## 📥 CSV Dataset Import
 
-**File:** ![CSV Import](Images/SAP%20HANA%20DATA%20IMPORT.png)
+**File:** ![CSV Import](SAP%20HANA%20DATA%20IMPORT.png)
 
 Shows the process of importing the CSV sales dataset into SAP HANA Studio.
 
@@ -30,7 +30,7 @@ Shows the process of importing the CSV sales dataset into SAP HANA Studio.
 
 ## 🗄 SAP HANA Sales Table
 
-**File:** ![SAP Table](Images/SAP%20HANA%20TABLE.png)
+**File:** ![SAP Table](SAP%20HANA%20TABLE.png)
 
 Shows the imported sales records successfully stored inside the SAP HANA database.
 
@@ -38,7 +38,7 @@ Shows the imported sales records successfully stored inside the SAP HANA databas
 
 ## 🔗 Power BI Connection
 
-**File:** ![Power BI Connector](Images/POWER%20BI%20CONNECTOR.png)
+**File:** ![Power BI Connector](POWER%20BI%20CONNECTOR.png)
 
 Shows Microsoft Power BI connecting to SAP HANA using the native SAP HANA Connector.
 
@@ -46,7 +46,7 @@ Shows Microsoft Power BI connecting to SAP HANA using the native SAP HANA Connec
 
 ## 📊 Interactive Dashboard
 
-**File:** ![Dashboard](Images/Dashboard.png)
+**File:** ![Dashboard](Dashboard.png)
 
 Shows the final interactive sales analytics dashboard created in Microsoft Power BI.
 
