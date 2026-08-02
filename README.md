@@ -30,9 +30,9 @@ This project demonstrates how SAP HANA and Microsoft Power BI together solve the
 
 # 🏗 End-to-End Architecture
 
-```markdown
+
 ![Architecture Diagram](Images/Architecture%20Diagram.png)
-```
+
 
 ---
 
@@ -76,9 +76,9 @@ SAP HANA Express Edition is installed inside **Ubuntu Linux Server** running on 
 
 This environment provides a secure platform for managing enterprise databases.
 
-```markdown
+
 ![SAP HANA Environment](Images/Oracle%20Virtualbox.png)
-```
+
 
 ---
 
@@ -95,9 +95,9 @@ During the import process
 
 are performed before storing the records.
 
-```markdown
+
 ![CSV Import](Images/SAP%20HANA%20DATA%20IMPORT.png)
-```
+
 
 ---
 
@@ -107,9 +107,9 @@ After successful import, all records are stored inside SAP HANA.
 
 The imported data is verified using SAP HANA Studio Data Preview.
 
-```markdown
+
 ![SAP Table](Images/SAP%20HANA%20TABLE.png)
-```
+
 
 ---
 
@@ -119,9 +119,9 @@ Microsoft Power BI connects directly with SAP HANA using the native SAP HANA Con
 
 This enables secure and high-performance analytics.
 
-```markdown
+
 ![Power BI Connector](Images/POWER%20BI%20CONNECTOR.png)
-```
+
 
 ---
 
@@ -140,9 +140,9 @@ The dashboard contains
 * Maps
 * Business Visualizations
 
-```markdown
+
 ![Dashboard](Images/Dashboard.png)
-```
+
 
 ---
 
