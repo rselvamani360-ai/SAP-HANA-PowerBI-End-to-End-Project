@@ -1,213 +1,243 @@
 # 🚀 SAP HANA to Power BI – End-to-End Sales Analytics Project
 
-## 📖 Project Overview
+## 📌 Project Overview
 
-This project demonstrates a complete end-to-end Business Intelligence workflow using SAP HANA and Microsoft Power BI.
+This project demonstrates a complete **End-to-End Business Intelligence workflow** by integrating **SAP HANA Database** with **Microsoft Power BI**.
 
-The primary objective of this project is to understand how enterprise sales data is imported, stored, managed, analyzed, and visualized to support business decision-making.
+The project begins with a structured sales dataset, imports it into SAP HANA, stores and manages the data inside an enterprise-grade in-memory database, and finally connects Power BI to build an interactive analytics dashboard.
 
-The workflow begins with a CSV sales dataset, which is imported into SAP HANA running on Ubuntu Linux inside Oracle VirtualBox. The data is managed using SAP HANA Studio (Eclipse) and then connected to Microsoft Power BI to create an interactive sales analytics dashboard.
-
----
-
-# 🏗️ End-to-End Architecture
-
-![Architecture Diagram](Images/Architecture_Diagram.png)
+The main objective of this project is to understand how enterprise organizations transform raw business data into meaningful insights for faster and smarter decision-making.
 
 ---
 
-# 🔄 Project Workflow
+# 🎯 Problem Statement
 
-```text
+Businesses generate thousands of sales transactions every day.
+
+Managing this information using spreadsheets becomes difficult as data volume increases.
+
+Organizations require
+
+* Fast data storage
+* Secure database management
+* High-performance analytics
+* Interactive dashboards
+* Real-time business insights
+
+This project demonstrates how SAP HANA and Microsoft Power BI together solve these challenges.
+
+---
+
+# 🏗 End-to-End Architecture
+
+```markdown
+![Architecture Diagram](Images/Architecture%20Diagram.png)
+```
+
+---
+
+# 🔄 Complete Project Workflow
+
+```
 CSV Sales Dataset
         │
         ▼
 Oracle VirtualBox
-(Ubuntu Linux)
+(Ubuntu Linux Server)
         │
         ▼
-SAP HANA Database
+SAP HANA Express Database
         │
         ▼
 SAP HANA Studio (Eclipse)
         │
         ▼
-Power BI (SAP HANA Connector)
+Data Validation
         │
         ▼
-Interactive Sales Dashboard
+Power BI SAP HANA Connector
         │
         ▼
-Business Insights & Decision Making
+Power BI Dashboard
+        │
+        ▼
+Business Insights
 ```
 
 ---
 
-# 🛠️ Technologies Used
-
-- SAP HANA Express Edition
-- SAP HANA Studio (Eclipse)
-- Oracle VirtualBox
-- Ubuntu Linux
-- Microsoft Power BI Desktop
-- SQL
-- CSV Dataset
+# 🖥 Project Implementation
 
 ---
 
-# 📊 Dashboard Features
+## 1️⃣ SAP HANA Environment
 
-The Power BI dashboard provides:
+SAP HANA Express Edition is installed inside **Ubuntu Linux Server** running on **Oracle VirtualBox**.
 
-- Total Sales KPI
-- Average Sales KPI
-- Total Customer Count
-- Sales by Region
-- Sales by Country
-- Material Category Analysis
-- Interactive Filters
-- Business Performance Dashboard
+This environment provides a secure platform for managing enterprise databases.
+
+```markdown
+![SAP HANA Environment](Images/Oracle%20Virtualbox.png)
+```
 
 ---
 
-# 💼 Business Problem
+## 2️⃣ Importing Sales Dataset
 
-Organizations generate large volumes of sales data every day. However, raw data alone does not provide meaningful insights for business decisions.
+The sales dataset is imported into SAP HANA Studio.
 
-Traditional reporting methods often require manual effort and consume significant time, making it difficult to monitor business performance effectively.
+During the import process
 
----
+* Table Structure Mapping
+* Data Type Selection
+* Column Validation
+* Data Loading
 
-# ✅ Business Solution
+are performed before storing the records.
 
-This project demonstrates how SAP HANA and Microsoft Power BI can be integrated to transform raw sales data into interactive dashboards.
-
-By storing data in SAP HANA and connecting it with Power BI, businesses can analyze sales performance through interactive reports and dashboards, enabling faster and more informed decision-making.
-
----
-
-# 📸 Project Implementation
-
-## 1️⃣ Ubuntu Linux Server
-
-![Ubuntu Server](Images/Ubuntu_Server.png)
-
-SAP HANA Express Edition is hosted on Ubuntu Linux running inside Oracle VirtualBox.
+```markdown
+![CSV Import](Images/SAP%20HANA%20DATA%20IMPORT.png)
+```
 
 ---
 
-## 2️⃣ SAP HANA System
+## 3️⃣ SAP HANA Sales Table
 
-![SAP HANA](Images/SAP_HANA_System.png)
+After successful import, all records are stored inside SAP HANA.
 
-SAP HANA services are successfully running and managing the in-memory database.
+The imported data is verified using SAP HANA Studio Data Preview.
 
----
-
-## 3️⃣ Importing CSV Dataset
-
-![CSV Import](Images/CSV_Import.png)
-
-Sales data is imported into SAP HANA using SAP HANA Studio.
+```markdown
+![SAP Table](Images/SAP%20HANA%20TABLE.png)
+```
 
 ---
 
-## 4️⃣ SAP HANA Sales Table
+## 4️⃣ Connecting Power BI with SAP HANA
 
-![SAP Table](Images/SAP_SALES_DATA_Table.png)
+Microsoft Power BI connects directly with SAP HANA using the native SAP HANA Connector.
 
-The imported sales records are stored and validated inside SAP HANA.
+This enables secure and high-performance analytics.
 
----
-
-## 5️⃣ Power BI Connection
-
-![Power BI Connection](Images/PowerBI_Connection.png)
-
-Power BI is connected directly to SAP HANA using the native SAP HANA connector.
+```markdown
+![Power BI Connector](Images/POWER%20BI%20CONNECTOR.png)
+```
 
 ---
 
-## 6️⃣ Interactive Dashboard
+## 5️⃣ Interactive Sales Dashboard
 
-![Dashboard](Images/PowerBI_Dashboard.png)
+The imported sales data is transformed into an interactive Power BI dashboard.
 
-The dashboard provides interactive business insights through KPIs, charts, maps, and filters.
+The dashboard contains
 
----
+* KPI Cards
+* Regional Sales Analysis
+* Country-wise Sales
+* Material Category Analysis
+* Customer Insights
+* Interactive Filters
+* Maps
+* Business Visualizations
 
-# 📈 Business Insights
-
-The dashboard helps users to:
-
-- Monitor overall sales performance
-- Compare sales across different regions
-- Analyze country-wise sales distribution
-- Evaluate material category performance
-- Track customer distribution
-- Support data-driven business decisions
-
----
-
-# ⭐ Key Features
-
-- End-to-End SAP HANA Integration
-- Enterprise Database Management
-- CSV Data Import
-- SAP HANA Studio Operations
-- SQL-Based Data Processing
-- Power BI Dashboard Development
-- Interactive Business Analytics
-- Data Visualization
+```markdown
+![Dashboard](Images/Dashboard.png)
+```
 
 ---
 
-# 📂 Repository Structure
+# 📊 Business Insights
 
-```text
+The dashboard helps business users answer important questions such as
+
+* Which region generates the highest sales?
+* Which country contributes the most revenue?
+* Which material category sells the most?
+* How many customers are active?
+* What is the total sales value?
+* Which region needs business improvement?
+* How does product demand vary across regions?
+
+These insights help organizations make faster and data-driven decisions.
+
+---
+
+# 💼 Business Benefits
+
+This solution enables organizations to
+
+* Improve business visibility
+* Analyze sales performance
+* Monitor KPIs
+* Reduce manual reporting
+* Support faster decision-making
+* Improve operational efficiency
+* Generate interactive reports
+* Enhance management reporting
+
+---
+
+# 🛠 Technologies Used
+
+* SAP HANA Express Edition
+* SAP HANA Studio (Eclipse)
+* Oracle VirtualBox
+* Ubuntu Linux Server
+* Microsoft Power BI Desktop
+* CSV Dataset
+* SQL
+* SAP HANA Connector
+
+---
+
+# ⚙ Skills Demonstrated
+
+* SAP HANA Administration
+* Database Management
+* SAP HANA Studio
+* SQL
+* Data Import
+* Data Validation
+* Power BI
+* Dashboard Development
+* Business Intelligence
+* Data Analytics
+* Data Visualization
+* Enterprise Analytics
+
+---
+
+# 📁 Repository Structure
+
+```
 SAP-HANA-PowerBI-End-to-End-Project
 │
 ├── README.md
+├── Dashboard
+│   └── SAP_SALES_DATA.pbix
 │
 ├── Images
-│   ├── Architecture_Diagram.png
-│   ├── Ubuntu_Server.png
-│   ├── SAP_HANA_System.png
-│   ├── CSV_Import.png
-│   ├── SAP_SALES_DATA_Table.png
-│   ├── PowerBI_Connection.png
-│   └── PowerBI_Dashboard.png
-│
-└── Dashboard
-    └── SAP_SALES_DATA.pbix
+│   ├── Architecture Diagram.png
+│   ├── Oracle Virtualbox.png
+│   ├── SAP HANA DATA IMPORT.png
+│   ├── SAP HANA TABLE.png
+│   ├── POWER BI CONNECTOR.png
+│   └── Dashboard.png
 ```
-
----
-
-# 🎯 Skills Demonstrated
-
-- SAP HANA
-- SAP HANA Studio
-- Database Management
-- SQL
-- Oracle VirtualBox
-- Ubuntu Linux
-- Microsoft Power BI
-- Data Modeling
-- Business Intelligence
-- Data Visualization
-- Dashboard Development
-- Business Analytics
 
 ---
 
 # 🚀 Future Enhancements
 
-- Integration with live SAP ERP data
-- Cloud deployment
-- Advanced SQL analytics
-- Real-time dashboard refresh
-- Predictive analytics using machine learning
+Future improvements may include
+
+* Live SAP HANA Database Connection
+* SAP Fiori Integration
+* Predictive Analytics
+* Machine Learning Models
+* Automated Data Refresh
+* SAP BW Integration
+* SAP Analytics Cloud Integration
 
 ---
 
@@ -215,8 +245,4 @@ SAP-HANA-PowerBI-End-to-End-Project
 
 **Selvamani R**
 
-MBA (HR) | SAP MM Learner | SAP HANA | Power BI | Business Intelligence | Data Analytics
-
----
-
-
+MBA (HR) | SAP MM Learner | Power BI | SAP HANA | Data Analytics | Business Intelligence
