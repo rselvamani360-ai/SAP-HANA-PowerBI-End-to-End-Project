@@ -14,7 +14,7 @@ Shows the complete end-to-end project architecture from CSV dataset to Power BI 
 
 ## 🖥 SAP HANA Environment
 
-**File:** ![SAP HANA Environment](Images/Oracle%20Virtualbox.png)
+**File:** ![SAP HANA Environment](Oracle%20VirtualBox.png)
 
 Shows Oracle VirtualBox running Ubuntu Linux Server with SAP HANA Express Edition installed and operational.
 
