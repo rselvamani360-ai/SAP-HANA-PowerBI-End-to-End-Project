@@ -8,9 +8,13 @@ This folder contains the Microsoft Power BI dashboard developed for the **SAP HA
 
 **File Name:**
 
-`SAP_SALES_DATA.pbix.zip`
+`SAP_SALES_DATA_DASHBOARD.pbix`
 
-> **Note:** The dashboard is provided as a ZIP file. Download and extract it before opening the `.pbix` file in Microsoft Power BI Desktop.
+**Download:**
+
+[📥 Download Power BI Dashboard](SAP_SALES_DATA_DASHBOARD.pbix)
+
+> Open this file using **Microsoft Power BI Desktop**.
 
 ---
 
