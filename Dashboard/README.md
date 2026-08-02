@@ -61,7 +61,7 @@ The dashboard preview is available in the **Images** folder.
 
 Image File:
 
-![Dashboard](Images/Dashboard.png)
+![Dashboard](../Images/Dashboard.png)
 
 ---
 
